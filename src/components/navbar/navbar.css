@@ -1,0 +1,41 @@
+.nav-brand-img {
+  width: 78px;
+  filter: invert();
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+}
+
+.nav-links a {
+  margin-left: 35px;
+  font-weight: 800;
+}
+
+.nav-links-mobile {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.slideInFromTop-1 {
+  animation: slideInFromTop 0.8s;
+}
+.slideInFromTop-2 {
+  animation: slideInFromTop 1s;
+}
+.slideInFromTop-3 {
+  animation: slideInFromTop 1.2s;
+}
+.slideInFromTop-4 {
+  animation: slideInFromTop 1.4s;
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-150px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
