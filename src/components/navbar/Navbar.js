@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
@@ -6,31 +6,50 @@ import "./navbar.css";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    window.onscroll = function () {
+      let navLink = document.querySelector(".nav-links");
+      let navImg = document.querySelector(".nav-brand-img");
+      let navMenu = document.querySelector(".ham-nav-links");
+
+      if (window.pageYOffset > 880) {
+        navLink.classList.add("nav-link-white");
+        navImg.classList.remove("logo-black");
+        navMenu.classList.add("nav-link-white");
+      } else {
+        navLink.classList.remove("nav-link-white");
+        navImg.classList.add("logo-black");
+        navMenu.classList.remove("nav-link-white");
+      }
+    };
+  }, []);
+
   return (
     <nav className="flex md:px-10 md:py-3 px-3 py-2 items-center place-content-between">
       <Link className="nav-brand" to="/">
         <img
           src="../img/logo-svg.svg"
           alt="Gabriel"
-          className="nav-brand-img slideInFromTop-1"
+          className="nav-brand-img slideInFromTop-1 mix-blend-difference logo-black"
         />
       </Link>
       <div className="nav-links hidden md:flex">
         <Link
           to="/"
-          className="hover:text-indigo-600 transition duration-50 slideInFromTop-2"
+          className="hover:text-indigo-600 transition duration-50 slideInFromTop-2 nav-link"
         >
           Home
         </Link>
         <Link
           to="/portfolio"
-          className="hover:text-indigo-600 transition duration-50 ease-in slideInFromTop-3"
+          className="hover:text-indigo-600 transition duration-50 ease-in slideInFromTop-3 nav-link"
         >
           Portfolio
         </Link>
         <Link
           to="/about"
-          className="hover:text-indigo-600 transition duration-50 ease-in slideInFromTop-4"
+          className="hover:text-indigo-600 transition duration-50 ease-in slideInFromTop-4 nav-link"
         >
           About
         </Link>

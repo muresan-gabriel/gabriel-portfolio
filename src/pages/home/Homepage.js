@@ -16,7 +16,7 @@ export default function Homepage() {
   return (
     <div id="container">
       <div className="container-home flex justify-center min-h-screen mx-auto max-w-7xl px-6 sm:px-8 lg:px-6">
-        <div className="container flex self-center  place-content-between">
+        <div className="container flex self-center place-content-between">
           <div className="text flex flex-col">
             <div className="flex">
               <span className="text-xs mr-3 text-slate-400 fade-in-1">
@@ -57,6 +57,7 @@ export default function Homepage() {
             </div>
           </div>
         </div>
+        <div className="md:inline-flex hidden">alo</div>
         <a
           className="arrow-down animate-bounce bg-slate-900 p-3 rounded-full ring-2 ring-indigo-500 self-end absolute m-5  hover:ring-offset-4 transition duration-150"
           href="#info"
@@ -76,7 +77,7 @@ export default function Homepage() {
         </a>
       </div>
       <div
-        className="min-h-screen rounded-t-3xl bg-slate-200 border border-slate-400"
+        className="min-h-screen bg-slate-900 ring-2 ring-offset-1 ring-indigo-500"
         id="info"
       ></div>
     </div>

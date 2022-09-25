@@ -1,6 +1,16 @@
 .nav-brand-img {
   width: 78px;
+  mix-blend-mode: overlay;
+}
+
+.logo-black {
   filter: invert();
+  transition: 0.3s;
+}
+
+.nav-link-white {
+  color: white;
+  transition: 0.3s;
 }
 
 nav {
