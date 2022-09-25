@@ -3,6 +3,8 @@ import "./home.css";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
+import DemoContainer from "../../components/demo-container/DemoContainer";
+
 export default function Homepage() {
   const navigate = useNavigate();
   const navigateTo = (route) => {
@@ -57,7 +59,7 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-        <div className="md:inline-flex hidden">alo</div>
+        <div className="lg:inline-flex hidden"></div>
         <a
           className="arrow-down animate-bounce bg-slate-900 p-3 rounded-full ring-2 ring-indigo-500 self-end absolute m-5  hover:ring-offset-4 transition duration-150"
           href="#info"
@@ -77,9 +79,39 @@ export default function Homepage() {
         </a>
       </div>
       <div
-        className="min-h-screen bg-slate-900 ring-2 ring-offset-1 ring-indigo-500"
+        className="min-h-screen bg-slate-900 ring-2 ring-offset-1 ring-indigo-500 text-slate-50 pt-5"
         id="info"
-      ></div>
+      >
+        <div className="mx-auto max-w-7xl ">
+          <div className="flex flex-col items-center justify-center">
+            <h4 className="text-3xl md:text-4xl font-black fade-in-3 md:mb-10 mb-5 mt-5">
+              Why work with me?
+            </h4>
+            <p className="md:max-w-xl text-slate-400 text-md text-center max-w-xs">
+              I am passionate about the web. I have experience with different
+              frameworks and libraries and I always aim to learn more about
+              various technologies, both on frontend and backend.
+            </p>
+          </div>
+        </div>
+        <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-6 mt-10 mb-10">
+          <div className="flex self-center flex-col">
+            <h4 className="text-3xl md:text-4xl font-black fade-in-3 mt-10">
+              Always mobile-first.
+            </h4>
+            <span className="text-sm text-indigo-500 mb-5">
+              Responsive design & development
+            </span>
+            <p className="text-slate-400 font-medium max-w-lg">
+              Your products will look fantastic on any screen-size. I always
+              build apps and projects mobile-first to ensure they're just as
+              great on mobile as on higher screen-sizes.
+            </p>
+            <DemoContainer></DemoContainer>
+          </div>
+        </div>
+        <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-6">alo</div>
+      </div>
     </div>
   );
 }
