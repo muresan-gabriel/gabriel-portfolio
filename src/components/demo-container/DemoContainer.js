@@ -47,7 +47,7 @@ export default function DemoContainer() {
   return (
     <main className="demo-container flex items-center relative">
       <div
-        className="bg-slate-800 mt-10 rounded-xl ring-1 ring-slate-700 overflow-hidden"
+        className="bg-slate-800 mt-10 rounded-xl border border-slate-700 overflow-hidden"
         id="demoBrowser"
         style={{ width: browserWidth + "px", height: browserHeight + "px" }}
       >
