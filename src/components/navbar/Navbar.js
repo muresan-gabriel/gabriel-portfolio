@@ -26,7 +26,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="flex md:px-10 md:py-3 px-3 py-2 items-center place-content-between">
+    <nav className="flex md:px-10 md:py-3 px-3 py-2 items-center place-content-between navbar-container">
       <Link className="nav-brand" to="/">
         <img
           src="../img/logo-svg.svg"
@@ -75,7 +75,7 @@ export default function Navbar() {
         </svg>
       </button>
       <Transition.Root show={open} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={setOpen}>
+        <Dialog as="div" className="relative z-10 modal-menu" onClose={setOpen}>
           <Transition.Child
             as={Fragment}
             enter="ease-in-out duration-500"

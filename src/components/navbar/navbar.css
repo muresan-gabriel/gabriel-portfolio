@@ -1,3 +1,11 @@
+.navbar-container {
+  z-index: 500;
+}
+
+.modal-menu {
+  z-index: 750;
+}
+
 .nav-brand-img {
   width: 78px;
   mix-blend-mode: overlay;
