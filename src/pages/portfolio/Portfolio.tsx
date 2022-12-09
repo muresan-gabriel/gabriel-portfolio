@@ -7,7 +7,10 @@ import { projectsList } from "../../components/data.js";
 import ProjectLoading from "../../components/project-loading/ProjectLoading.tsx";
 
 export default function Portfolio(props) {
-  const [loading, setLoading] = useState(false);
+  const [loaded, setLoaded] = useState(false);
+  function onLoad() {
+    setLoaded(true);
+  }
   // const [projData, setProjData] = useState([]);
 
   // const projectsCollection = "projects";
@@ -43,39 +46,38 @@ export default function Portfolio(props) {
       </div>
       <div className="projects-container fade-in-2 pt-[2rem] mb-5 lg:flex-wrap lg:px-[15rem] flex lg:flex-row flex-col items-center justify-center">
         {projectsList.map((project) => {
-          if (loading) {
-            return <ProjectLoading />;
-          } else {
-            return (
-              <Link
-                to={`/portfolio/${project.name}`}
-                className="project m-5 bg-slate-100 w-100 xl:w-[45%] text-slate-50 duration-300 transition hover:translate-y-[-3px]"
-              >
-                <div className="image-container lg:w-full w-full max-h-[15rem] overflow-hidden">
-                  <img
-                    src={`img/portfolio-imgs/${project.name}.png`}
-                    alt="Project"
-                    className="project-image rounded-t-3xl"
-                  />
+          return (
+            <Link
+              style={{ display: loaded ? "block" : "none" }}
+              to={`/portfolio/${project.name}`}
+              className="project m-5 bg-slate-100 w-100 xl:w-[45%] text-slate-50 duration-300 transition hover:translate-y-[-3px]"
+            >
+              <div className="image-container lg:w-full w-full max-h-[15rem] overflow-hidden">
+                <img
+                  src={`img/portfolio-imgs/${project.name}.png`}
+                  alt={project.name}
+                  className="project-image rounded-t-3xl"
+                  onLoad={onLoad}
+                  // onLoad={setLoading(false)}
+                />
+              </div>
+              <div className="project-information bg-slate-50 p-5 drop-shadow-lg rounded-b-3xl">
+                <h3 className="text-slate-900 font-bold">{project.label}</h3>
+                <div className="tech-container mt-5 mb-[-0.5rem]">
+                  {project.technologies.map((tech) => {
+                    return (
+                      <span className="text-slate-500 font-medium text-xs mr-2">
+                        #{tech}
+                      </span>
+                    );
+                  })}
                 </div>
-                <div className="project-information bg-slate-50 p-5 drop-shadow-lg rounded-b-3xl">
-                  <h3 className="text-slate-900 font-bold">{project.label}</h3>
-                  <div className="tech-container mt-5 mb-[-0.5rem]">
-                    {project.technologies.map((tech) => {
-                      return (
-                        <span className="text-slate-500 font-medium text-xs mr-2">
-                          #{tech}
-                        </span>
-                      );
-                    })}
-                  </div>
-                  <span className="text-slate-900 font-regular text-xs">
-                    {project.type}
-                  </span>
-                </div>
-              </Link>
-            );
-          }
+                <span className="text-slate-900 font-regular text-xs">
+                  {project.type}
+                </span>
+              </div>
+            </Link>
+          );
         })}
       </div>
     </div>
