@@ -1,6 +1,9 @@
-export default function ProjectLoading() {
+export default function ProjectLoading(props) {
   return (
-    <div className="project m-5 w-[90%] xl:w-[45%] duration-300 transition overflow-hidden">
+    <div
+      className="project m-5 w-[90%] xl:w-[45%] duration-300 transition overflow-hidden"
+      style={{ display: !props.loaded ? "block" : "none" }}
+    >
       <div className="image-placeholder  bg-slate-900 h-[15rem] flex items-center justify-center rounded-t-3xl">
         <svg
           xmlns="http://www.w3.org/2000/svg"
