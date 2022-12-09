@@ -1,60 +1,14 @@
-import { Fragment, useState, useEffect } from "react";
+import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
+
 import "./navbar.css";
 
-export default function Navbar() {
+export default function MobileNavigation() {
   const [open, setOpen] = useState(false);
-
-  useEffect(() => {
-    window.onscroll = function () {
-      let navLink = document.querySelector(".nav-links");
-      let navImg = document.querySelector(".nav-brand-img");
-      let navMenu = document.querySelector(".ham-nav-links");
-
-      if (window.pageYOffset > 880) {
-        navLink.classList.add("nav-link-white");
-        navImg.classList.remove("logo-black");
-        navMenu.classList.add("nav-link-white");
-      } else {
-        navLink.classList.remove("nav-link-white");
-        navImg.classList.add("logo-black");
-        navMenu.classList.remove("nav-link-white");
-      }
-    };
-  }, []);
-
   return (
-    <nav className="flex md:px-10 md:py-3 px-3 py-2 items-center place-content-between navbar-container">
-      <Link className="nav-brand" to="/">
-        <img
-          src="../img/logo-svg.svg"
-          alt="Gabriel"
-          className="nav-brand-img slideInFromTop-1 mix-blend-difference logo-black"
-        />
-      </Link>
-      <div className="nav-links hidden md:flex">
-        <Link
-          to="/"
-          className="hover:text-indigo-600 transition duration-50 slideInFromTop-2 nav-link"
-        >
-          Home
-        </Link>
-        <Link
-          to="/portfolio"
-          className="hover:text-indigo-600 transition duration-50 ease-in slideInFromTop-3 nav-link"
-        >
-          Portfolio
-        </Link>
-        <Link
-          to="/about"
-          className="hover:text-indigo-600 transition duration-50 ease-in slideInFromTop-4 nav-link"
-        >
-          About
-        </Link>
-      </div>
-
+    <>
       <button
         onClick={() => setOpen(true)}
         className="ham-nav-links md:hidden slideInFromTop-3"
@@ -123,7 +77,6 @@ export default function Navbar() {
                     </Transition.Child>
                     <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
                       <div className="relative mt-6 flex-1 px-4 sm:px-6">
-                        {/* Replace with your content */}
                         <div className="absolute inset-0 px-4 sm:px-6 flex items-center justify-center">
                           <div className="nav-links-mobile flex flex-col items-center">
                             <Link
@@ -147,9 +100,15 @@ export default function Navbar() {
                             >
                               ABOUT
                             </Link>
+                            <Link
+                              onClick={() => setOpen(false)}
+                              to="/blog"
+                              className="hover:text-indigo-600 transition duration-150 ease-in"
+                            >
+                              BLOG
+                            </Link>
                           </div>
                         </div>
-                        {/* /End replace */}
                       </div>
                     </div>
                   </Dialog.Panel>
@@ -159,6 +118,6 @@ export default function Navbar() {
           </div>
         </Dialog>
       </Transition.Root>
-    </nav>
+    </>
   );
 }

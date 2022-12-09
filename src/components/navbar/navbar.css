@@ -22,8 +22,8 @@
 }
 
 nav {
-  position: fixed;
-  width: 100vw;
+  position: absolute;
+  width: 100%;
 }
 
 .nav-links a {
@@ -47,6 +47,9 @@ nav {
 }
 .slideInFromTop-4 {
   animation: slideInFromTop 1.4s;
+}
+.slideInFromTop-5 {
+  animation: slideInFromTop 1.6s;
 }
 
 @keyframes slideInFromTop {
