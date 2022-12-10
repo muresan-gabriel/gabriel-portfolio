@@ -102,14 +102,14 @@ export default function DemoContainer() {
           <div id="content" className={content}>
             <div id="gallery" className={gallery}>
               <div
-                className="bg-slate-900 w-[584px] h-[256px] rounded-md flex justify-center items-center"
+                className="bg-slate-900 w-[584px] md:h-[256px] h-max rounded-md flex justify-center items-center"
                 style={{ display: !loaded ? "flex" : "none" }}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="#334155"
-                  className="w-24 h-24 animate-pulse"
+                  className="md:w-24 md:h-max h-max w-16 animate-pulse"
                 >
                   <path
                     fillRule="evenodd"
