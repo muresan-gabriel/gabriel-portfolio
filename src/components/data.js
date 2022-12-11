@@ -30,6 +30,38 @@ function getMonth(date) {
   }
 }
 
+function getMonthBlog(date) {
+  const month = date.getMonth() + 1;
+  switch (month) {
+    case 1:
+      return "January";
+    case 2:
+      return "February";
+    case 3:
+      return "March";
+    case 4:
+      return "April";
+    case 5:
+      return "May";
+    case 6:
+      return "June";
+    case 7:
+      return "July";
+    case 8:
+      return "August";
+    case 9:
+      return "September";
+    case 10:
+      return "October";
+    case 11:
+      return "November";
+    case 12:
+      return "December";
+    default:
+      return "[Month]";
+  }
+}
+
 function getYear(date) {
   return "20" + String(date.getYear()).slice(1);
 }
@@ -40,6 +72,14 @@ function getDate(date) {
       return "Present";
     default:
       return getMonth(new Date(date)) + " " + getYear(new Date(date));
+  }
+}
+function getDateBlog(date) {
+  switch (date) {
+    case "Present":
+      return "Present";
+    default:
+      return getMonthBlog(new Date(date)) + " " + getYear(new Date(date));
   }
 }
 
@@ -118,6 +158,17 @@ export const projectsList = [
     ],
     type: "Personal",
     technologies: ["HTML", "CSS", "JavaScript"],
+  },
+];
+
+export const blogPosts = [
+  {
+    id: 0,
+    label: "UI / UX Guidance for Developers",
+    publishedOn: getDateBlog("2022-11-24"),
+    lastEdited: getDateBlog("2022-11-25"),
+    name: "blog-ui",
+    categories: ["Design", "UI", "UX", "Guide"],
   },
 ];
 

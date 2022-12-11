@@ -10,6 +10,8 @@ import Homepage from "./pages/home/Homepage.tsx";
 import About from "./pages/about/About.tsx";
 import Portfolio from "./pages/portfolio/Portfolio.tsx";
 import Project from "./pages/project/Project.tsx";
+import Blog from "./pages/blog/Blog.tsx";
+import BlogPost from "./pages/blog-post/BlogPost.tsx";
 
 import { db } from "./configs/firebase-config.tsx";
 
@@ -43,8 +45,12 @@ function App() {
               exact
             ></Route>
             <Route path="/about" element={<About></About>} exact></Route>
-            <Route path="/blog" element={<></>} exact></Route>
-            <Route path="/blog/:name" element={<></>} exact></Route>
+            <Route path="/blog" element={<Blog></Blog>} exact></Route>
+            <Route
+              path="/blog/:name"
+              element={<BlogPost></BlogPost>}
+              exact
+            ></Route>
             <Route
               path="/portfolio/:name"
               element={<Project></Project>}
