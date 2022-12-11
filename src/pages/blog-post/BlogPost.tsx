@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import { blogPosts } from "../../components/data";
+import BlogArticle from "./BlogArticle.tsx";
 
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -11,8 +12,9 @@ import "./blog-post.css";
 export default function BlogPost({ match }) {
   const { name } = useParams();
   const post = blogPosts.find((post) => post.name === name);
+
   return (
-    <div className="container pt-[5rem] ">
+    <div className="container pt-[5rem]">
       <div className="information-container flex items-center justiy-center flex-col fade-in-1">
         <Link
           to="/blog"
@@ -39,9 +41,7 @@ export default function BlogPost({ match }) {
           className="project-image rounded-xl w-[90%] mt-5 md:w-[60%] drop-shadow-md"
         />
       </div>
-      <article className="px-8 md:px-[20%] mt-5 blog-article">
-        <ReactMarkdown remarkPlugins={[remarkGfm]}></ReactMarkdown>
-      </article>
+      <BlogArticle name={post.name}></BlogArticle>
     </div>
   );
 }

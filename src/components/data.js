@@ -167,7 +167,7 @@ export const blogPosts = [
     label: "UI / UX Guidance for Developers",
     publishedOn: getDateBlog("2022-11-24"),
     lastEdited: getDateBlog("2022-11-25"),
-    name: "blog-ui",
+    name: "ui-ux",
     categories: ["Design", "UI", "UX", "Guide"],
   },
 ];
