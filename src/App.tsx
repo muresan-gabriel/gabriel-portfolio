@@ -12,6 +12,7 @@ import Portfolio from "./pages/portfolio/Portfolio.tsx";
 import Project from "./pages/project/Project.tsx";
 import Blog from "./pages/blog/Blog.tsx";
 import BlogPost from "./pages/blog-post/BlogPost.tsx";
+import NotFound from "./pages/not-found/NotFound.tsx";
 
 import { db } from "./configs/firebase-config.tsx";
 
@@ -54,6 +55,7 @@ function App() {
               element={<Project></Project>}
               exact
             ></Route>
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
       </div>
