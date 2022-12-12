@@ -12,9 +12,14 @@ import "./blog-post.css";
 export default function BlogPost({ match }) {
   const { name } = useParams();
   const post = blogPosts.find((post) => post.name === name);
+  const [progress, setProgress] = useState(0);
 
   return (
     <div className="container pt-[5rem]">
+      <div
+        className="progress fixed top-0 left-0 py-2 m-0 z-[1000] bg-indigo-500"
+        style={{ width: progress + "%" }}
+      ></div>
       <div className="information-container flex items-center justiy-center flex-col fade-in-1">
         <Link
           to="/blog"
