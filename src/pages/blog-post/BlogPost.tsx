@@ -1,11 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 
 import { blogPosts } from "../../components/data";
 import BlogArticle from "./BlogArticle.tsx";
-
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 
 import "./blog-post.css";
 
@@ -14,10 +11,26 @@ export default function BlogPost({ match }) {
   const post = blogPosts.find((post) => post.name === name);
   const [progress, setProgress] = useState(0);
 
+  function progressBarScroll() {
+    let winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop,
+      height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight,
+      scrolled = (winScroll / height) * 100;
+    setProgress(scrolled);
+  }
+
+  useEffect(() => {
+    window.onscroll = function () {
+      progressBarScroll();
+    };
+  }, [progress]);
+
   return (
     <div className="container pt-[5rem]">
       <div
-        className="progress fixed top-0 left-0 py-2 m-0 z-[1000] bg-indigo-500"
+        className="progress fixed top-0 left-0 py-1 m-0 z-[1000] bg-indigo-500"
         style={{ width: progress + "%" }}
       ></div>
       <div className="information-container flex items-center justiy-center flex-col fade-in-1">
@@ -31,6 +44,9 @@ export default function BlogPost({ match }) {
         <h1 className="text-slate-800 font-black text-3xl mt-4 max-w-md text-center">
           {post.label}
         </h1>
+        <span className="text-slate-500 mt-3 font-regular text-xs">
+          Published on {post.publishedOn} · {post.readTime}
+        </span>
         <div className="technologies-container mt-5 flex place-content-between flex-wrap sm:min-w-24 justify-center">
           {post.categories.map((category) => {
             return (

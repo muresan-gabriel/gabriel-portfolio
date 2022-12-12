@@ -50,9 +50,14 @@ export default function Blog(props) {
                       );
                     })}
                   </div>
-                  <span className="text-slate-900 font-regular text-xs">
-                    {blog.publishedOn}
-                  </span>
+                  <div className="flex place-content-between mt-2">
+                    <span className="text-slate-900 font-regular text-xs">
+                      {blog.publishedOn}
+                    </span>
+                    <span className="text-slate-500 font-regular text-xs">
+                      {blog.readTime}
+                    </span>
+                  </div>
                 </div>
               </Link>
             </>

@@ -105,6 +105,10 @@ function getTimeWorked(startDate, endDate) {
   }
 }
 
+function getReadTime(wordCount) {
+  return `${Math.floor(wordCount / 250)} min read`;
+}
+
 export const projectsList = [
   {
     id: 0,
@@ -168,6 +172,8 @@ export const blogPosts = [
     publishedOn: getDateBlog("2022-11-24"),
     lastEdited: getDateBlog("2022-11-25"),
     name: "ui-ux",
+    wordCount: 2321,
+    readTime: getReadTime(2321),
     categories: ["Design", "UI", "UX", "Guide"],
   },
 ];

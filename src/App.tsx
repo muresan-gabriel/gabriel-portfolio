@@ -15,8 +15,6 @@ import BlogPost from "./pages/blog-post/BlogPost.tsx";
 
 import { db } from "./configs/firebase-config.tsx";
 
-// Firebase Imports
-
 function App() {
   const [loaded, setLoaded] = useState(false);
 

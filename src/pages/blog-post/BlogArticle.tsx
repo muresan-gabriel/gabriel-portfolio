@@ -7,9 +7,9 @@ export default class BlogArticle extends Component {
     this.state = { markdown: "" };
   }
   componentDidMount() {
-    const readmePath = require(`../blog-posts/${this.props.name}.md`);
+    const markdownPost = require(`../blog-posts/${this.props.name}.md`);
 
-    fetch(readmePath)
+    fetch(markdownPost)
       .then((response) => {
         return response.text();
       })
