@@ -119,7 +119,7 @@ Besides defining a set of colors to use in your project, make sure to be consist
 
 Your shapes should be just as consistent as your colors. If you're working on an application that you think would suit rounded corners, keep the value consistent throughout all elements. Don't enforce a button with a border-radius of `25px` and the parent container with a border-radius of `20px`. Keep them the same.
 
-Use the same font everywhere. You need a good vision and a good understanding of typography to be able to combine fonts together. Use one type of font everywhere. Define the importance of the text based on size, and sometimes color, not based on the font. All of this text you're reading is displayed using `Segoe UI`. GitHub stays consistent and uses the same font for messages, placeholder text in input elements or buttons. The only exception to this rule are markdown / code blocks. These are written using a monospace font called `Consolas`.
+Use the same font everywhere. You need a good vision and a good understanding of typography to be able to combine fonts together. Use one type of font everywhere. Define the importance of the text based on size, and sometimes color, not based on the font. GitHub stays consistent and uses the same font (`Segoe UI`) for messages, placeholder text in input elements or buttons. The only exception to this rule are markdown / code blocks. These are written using a monospace font called `Consolas`.
 
 To further provide an example of consistency in GitHub, everything related to danger or aborting specific action is marked using red. The `HEX` value of this red is `#DA3633`. The same blue is used in hyperlinks and the same green is used for CTAs or elements used in confirmation / submitting an action.
 

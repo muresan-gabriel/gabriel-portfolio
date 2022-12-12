@@ -245,7 +245,7 @@ export const certifications = [
     issued: getDate("2022-08-29"),
   },
   {
-    certification: "Microcertification - Integration Hub",
+    certification: "Microcertification - Service Portal",
     tool: "ServiceNow",
     issued: getDate("2022-08-30"),
   },
