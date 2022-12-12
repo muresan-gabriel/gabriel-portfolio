@@ -69,3 +69,24 @@
 .blog-article {
   margin-bottom: 3rem;
 }
+
+#contents ol > li ul {
+  color: #475569;
+  margin-left: 1rem;
+}
+
+#contents li {
+  transition: 0.2s;
+}
+
+#contents li:hover {
+  color: #6366f1;
+}
+
+ul li li {
+  margin-left: 2rem;
+}
+
+ul ul {
+  margin-top: 1rem;
+}

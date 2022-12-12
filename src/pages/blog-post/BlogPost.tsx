@@ -61,6 +61,40 @@ export default function BlogPost({ match }) {
           />
         </svg>
       </a>
+      <div id="contents" className="hidden mt-[5rem] lg:hidden fixed">
+        <summary className="list-none text-xl mb-2 font-bold">
+          Table of Contents
+        </summary>
+        <ol>
+          <li>
+            <a href="#about-the-project">About The Project</a>
+          </li>
+          <li>
+            <a href="#basic-design-principles">Basic Design Principles</a>
+            <ul>
+              <li>
+                <a href="#contrast">Contrast</a>
+              </li>
+              <li>
+                <a href="#proportion">Proportion</a>
+              </li>
+              <li>
+                <a href="#hierarchy">Hierarchy</a>
+              </li>
+              <li>
+                <a href="#white-space">White-Space</a>
+              </li>
+              <li>
+                <a href="#unity">Unity</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#general-tips">General Tips</a>
+          </li>
+        </ol>
+      </div>
+
       <div className="information-container flex items-center justiy-center flex-col fade-in-1">
         <Link
           to="/blog"

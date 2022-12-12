@@ -172,8 +172,8 @@ export const blogPosts = [
     publishedOn: getDateBlog("2022-11-24"),
     lastEdited: getDateBlog("2022-11-25"),
     name: "ui-ux",
-    wordCount: 2321,
-    readTime: getReadTime(2321),
+    wordCount: 2606,
+    readTime: getReadTime(2606),
     categories: ["Design", "UI", "UX", "Guide"],
   },
 ];
