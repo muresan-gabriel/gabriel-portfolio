@@ -2,6 +2,8 @@ import { Link, useParams, useNavigate } from "react-router-dom";
 import { projectsList } from "../../components/data";
 import React, { useState } from "react";
 
+import ProjectDescription from "./ProjectDescription.tsx";
+
 export default function Project({ match }) {
   const { name } = useParams();
   const project = projectsList.find((project) => project.name === name);
@@ -33,15 +35,9 @@ export default function Project({ match }) {
           className="project-image rounded-xl w-[90%] mt-5 md:w-[60%] drop-shadow-md"
         />
         <div className="description-container mt-5">
-          {project.description.map((paragraph) => {
-            return (
-              <p className="paragraph mb-4 text-slate-600 px-8 md:px-[20%]">
-                {paragraph}
-              </p>
-            );
-          })}
+          <ProjectDescription name={project.name}></ProjectDescription>
         </div>
-        <div className="flex mt-10 self-start md:ml-[5%] ml-[7%] sm:hidden">
+        {/* <div className="flex mt-10 self-start md:ml-[5%] ml-[7%] sm:hidden">
           More Projects
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -55,8 +51,8 @@ export default function Project({ match }) {
               clipRule="evenodd"
             />
           </svg>
-        </div>
-        <div className="projects-container fade-in-2 max-w-[100vw] sm:hidden lg:px-[15rem] flex overflow-scroll mb-5">
+        </div> */}
+        {/* <div className="projects-container fade-in-2 max-w-[100vw] sm:hidden lg:px-[15rem] flex overflow-scroll mb-5">
           {projectsList.map((moreProject) => {
             if (moreProject.name !== project.name) {
               return (
@@ -92,7 +88,7 @@ export default function Project({ match }) {
               );
             }
           })}
-        </div>
+        </div> */}
       </div>
     </div>
   );

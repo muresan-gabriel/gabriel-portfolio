@@ -151,18 +151,6 @@ export const projectsList = [
     type: "Internship",
     technologies: ["AngularJS", "Bootstrap", "ServiceNow", "LESS", "GlideAPI"],
   },
-  {
-    id: 2,
-    name: "portfolio-v1",
-    label: "Portfolio - v1.0",
-    description: [
-      "First Portfolio I've made to display my work. Built using only HTML / CSS / JS, I spent more time exploring and learning various concepts and principles I should follow in web development.",
-      "The portfolio is deployed on Netlify from it's GitHub repository, using .html files as pages.",
-      "The project has some animation in place, created using JS and CSS classes manipulaion.",
-    ],
-    type: "Personal",
-    technologies: ["HTML", "CSS", "JavaScript"],
-  },
 ];
 
 export const blogPosts = [
