@@ -148,7 +148,7 @@ export const workExperience = [
     endDate: getDate("Present"),
     experience: getTimeWorked(new Date("2022-08-01"), new Date()),
     description:
-      "Obtained System Administrator and Application Developer certifications, was assigned to an internal project where I did debugging and defect remediation on various solution implementations, but mainly focused on Field Service Management.",
+      "Obtained System Administrator and Application Developer certifications, was assigned to a project where I did debugging and defect remediation on various solution implementations, but mainly focused on Field Service Management.",
     companyImage: "",
     technologies: [
       "AngularJS",
