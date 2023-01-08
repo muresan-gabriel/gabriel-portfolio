@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function LandingContainer() {
   const navigate = useNavigate();
+
   const navigateTo = (route: string) => {
     const container = document.getElementById("container");
     container.classList.add("fadeOut");
@@ -50,6 +51,15 @@ export default function LandingContainer() {
               Portfolio
             </div>
           </div>
+        </div>
+        <div className="absolute bottom-[2%] right-[2%] text-sm">
+          <span className="bg-slate-700 text-slate-300 p-2 rounded-md text-xs">
+            CTRL
+          </span>{" "}
+          <span className="bg-slate-700 text-slate-300 py-2 px-3 rounded-md text-xs">
+            Y
+          </span>{" "}
+          to switch to terminal
         </div>
       </div>
 

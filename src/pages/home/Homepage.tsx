@@ -12,7 +12,6 @@ export default function Homepage() {
   const navigate = useNavigate();
 
   const terminalFunction = useCallback((event) => {
-    console.log(event);
     if (event.ctrlKey && event.key === "y") {
       navigate("/terminal");
     }
