@@ -40,6 +40,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Homepage></Homepage>} exact></Route>
             <Route
+              path="/terminal"
+              element={<Terminal></Terminal>}
+              exact
+            ></Route>
+            <Route
               path="/portfolio"
               element={<Portfolio db={db}></Portfolio>}
               exact

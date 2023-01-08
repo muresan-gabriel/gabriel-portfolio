@@ -1,11 +1,30 @@
 import "./home.css";
 
+import { useNavigate } from "react-router-dom";
+import { useCallback, useEffect } from "react";
+
 import DemoContainer from "../../components/demo-container/DemoContainer.tsx";
 import UserResearch from "../../components/user-research-container/UserResearch.tsx";
 import SocialIcons from "../../components/social-icons/SocialIcons.tsx";
 import LandingContainer from "../../components/landing-container/LandingContainer.tsx";
 
 export default function Homepage() {
+  const navigate = useNavigate();
+
+  const terminalFunction = useCallback((event) => {
+    console.log(event);
+    if (event.ctrlKey && event.key === "y") {
+      navigate("/terminal");
+    }
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener("keydown", terminalFunction, false);
+
+    return () => {
+      document.removeEventListener("keydown", terminalFunction, false);
+    };
+  }, [terminalFunction]);
   return (
     <div id="container">
       <LandingContainer></LandingContainer>
