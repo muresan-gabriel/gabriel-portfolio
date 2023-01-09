@@ -101,7 +101,7 @@ export default function Homepage() {
             <p className="text-slate-400 font-medium text-center">
               Say hi 👋 on social media or via{" "}
               <a
-                href="mailto:contact@gabrielmuresan.site"
+                href="mailto:hello@gabrielmuresan.com"
                 className="text-indigo-500 animate transition duration-1 hover:text-indigo-600"
               >
                 email
