@@ -11,6 +11,7 @@ const Terminal = () => {
   const [history, setHistory] = useState([
     "Hello! This is the terminal version of my website. It is currently under development. If there is something that you are not able to see here, please return to my website.\n\thelp\t\t\tGet a list of available commands\n\tabout\t\t\tInformation about Gabriel\n\tprojects\t\tA list of projects [In Progress]\n\thome\t\t\tReturn to the homepage\n\tclear\t\t\tClear the terminal",
   ]);
+  const commandHistory = [];
 
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
@@ -55,7 +56,7 @@ const Terminal = () => {
         type="textarea"
         cols="100"
         autoFocus
-        className="input-terminal mb-[80%] bg-transparent focus:outline-none w-[80%] caret-indigo-500"
+        className="input-terminal mb-[80%] bg-transparent focus:outline-none w-[40%] caret-indigo-500"
         onKeyDown={handleKeyDown}
         onChange={handleInput}
         autocomplete="off"
