@@ -9,3 +9,11 @@
 .input-terminal::selection {
   background-color: rgba(102, 112, 255, 0.622);
 }
+
+#messages {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}

@@ -40,7 +40,7 @@ const Terminal = () => {
   return (
     <div
       onContextMenu={(e) => e.preventDefault()}
-      className="terminal w-[100vw] bg-zinc-900 z-[6000] font-light text-md p-2 text-slate-100"
+      className="terminal bg-zinc-900 z-[6000] font-light text-md p-2 text-slate-100"
     >
       <pre id="messages">
         {history.map((command) => {
@@ -53,7 +53,7 @@ const Terminal = () => {
       <input
         type="textarea"
         cols="100"
-        className="input-terminal mb-[50%] bg-transparent focus:outline-none w-[80%] caret-indigo-500"
+        className="input-terminal mb-[80%] bg-transparent focus:outline-none w-[80%] caret-indigo-500"
         onKeyDown={handleKeyDown}
         onChange={handleInput}
       />
