@@ -1,13 +1,15 @@
 import "./terminal.css";
 
 import { useState, useEffect, React } from "react";
+import { useNavigate } from "react-router-dom";
 
 import { commands, executeCommands } from "./terminal.utils.js";
 
 const Terminal = () => {
+  const navigate = useNavigate();
   const [input, setInput] = useState("");
   const [history, setHistory] = useState([
-    "Hello! This is the terminal version of my website. It is currently under development. If there is something that you are not able to see here, please return to my website.\n\thelp\t\t\tGet a list of available commands\n\tabout\t\t\tInformation about Gabriel\n\tprojects\t\tA list of projects\n\tsocial\t\t\tA list of social links\n\thome\t\t\tReturn to the homepage\n\tclear\t\t\tClear the terminal",
+    "Hello! This is the terminal version of my website. It is currently under development. If there is something that you are not able to see here, please return to my website.\n\thelp\t\t\tGet a list of available commands\n\tabout\t\t\tInformation about Gabriel\n\tprojects\t\tA list of projects [In Progress]\n\thome\t\t\tReturn to the homepage\n\tclear\t\t\tClear the terminal",
   ]);
 
   const handleKeyDown = (event) => {
@@ -17,9 +19,11 @@ const Terminal = () => {
         setTimeout(() => {
           event.target.value = "";
         }, 10);
+      } else if (event.target.value === "home") {
+        navigate("/");
       } else {
         const command =
-          `guest@gabrielmuresan.com:~ $ ${event.target.value}\n` +
+          `guest@gabrielmuresan.com:~$ ${event.target.value}\n` +
           executeCommands(event.target.value);
         setHistory((history) => [...history, command]);
         setTimeout(() => {
