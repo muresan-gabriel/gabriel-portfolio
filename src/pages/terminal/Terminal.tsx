@@ -1,6 +1,6 @@
 import "./terminal.css";
 
-import { useState, useEffect, React } from "react";
+import { useState, useEffect, React, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { commands, executeCommands } from "./terminal.utils.js";
@@ -51,11 +51,14 @@ const Terminal = () => {
       <span className="text-cyan-500">~</span>
       <span className="mr-2">$</span>
       <input
+        id="terminalInput"
         type="textarea"
         cols="100"
+        autoFocus
         className="input-terminal mb-[80%] bg-transparent focus:outline-none w-[80%] caret-indigo-500"
         onKeyDown={handleKeyDown}
         onChange={handleInput}
+        autocomplete="off"
       />
     </div>
   );
