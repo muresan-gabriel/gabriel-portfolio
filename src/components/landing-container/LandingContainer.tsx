@@ -52,7 +52,7 @@ export default function LandingContainer() {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-[2%] right-[2%] text-sm">
+        <div className="absolute bottom-[2%] right-[2%] text-sm hidden xl:block">
           <span className="bg-slate-700 text-slate-300 p-2 rounded-md text-xs">
             CTRL
           </span>{" "}
