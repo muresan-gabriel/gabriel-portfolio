@@ -9,7 +9,7 @@ export const executeCommands = function (command) {
     case "social":
       return "Socials";
     case "help":
-      return "\thelp\t\t\tGet a list of available commands\n\tabout\t\t\tInformation about Gabriel\n\tprojects\t\tA list of projects [In Progress]\n\thome\t\t\tReturn to the homepage\n\tclear\t\t\tClear the terminal";
+      return "\thelp\t\t\tGet a list of available commands\n\tabout\t\t\tInformation about myself\n\tprojects\t\tA list of projects [In Progress]\n\thome\t\t\tReturn to the homepage\n\tclear\t\t\tClear the terminal";
     default:
       return "Command not found. Type 'help' for a list of available commands.";
   }
