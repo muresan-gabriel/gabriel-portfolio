@@ -6,7 +6,9 @@ import { commands, executeCommands } from "./terminal.utils.js";
 
 const Terminal = () => {
   const [input, setInput] = useState("");
-  const [history, setHistory] = useState([]);
+  const [history, setHistory] = useState([
+    "Hello! This is the terminal version of my website. It is currently under development. If there is something that you are not able to see here, please return to my website.\n\thelp\t\t\tGet a list of available commands\n\tabout\t\t\tInformation about Gabriel\n\tprojects\t\tA list of projects\n\tsocial\t\t\tA list of social links\n\thome\t\t\tReturn to the homepage\n\tclear\t\t\tClear the terminal",
+  ]);
 
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
