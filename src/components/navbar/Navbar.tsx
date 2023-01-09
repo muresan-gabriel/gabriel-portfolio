@@ -10,7 +10,6 @@ export default function Navbar(props) {
   const [display, setDisplay] = useState(true);
 
   useEffect(() => {
-    console.log(location.pathname);
     if (location.pathname === "/terminal") {
       setDisplay(false);
     } else if (location.pathname !== "/terminal") {
