@@ -182,7 +182,7 @@ export const workExperience = [
 
 export const education = [
   {
-    specialization: "Computer Science - B.Sc.",
+    specialization: "Computer Science - B. Sc.",
     university: "Technical University of Cluj-Napoca",
     startDate: getDate("2020-10-01"),
     endDate: getDate("2023-07-01"),
