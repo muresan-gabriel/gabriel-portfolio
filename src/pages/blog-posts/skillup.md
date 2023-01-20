@@ -1,58 +1,70 @@
 ## About the project
 
-SkillUp is a ServiceNow application built during the Internship and Training done at Computacenter Romania.
+SkillUp is a ServiceNow application that was developed during an internship and training program at Computacenter Romania.
 
-The application is a ServiceNow Management System which allows the end-users to enroll to various courses and learn more about their chosen subjects.
+The application serves as a comprehensive Learning Management System, providing end-users with the ability to enroll in various courses and expand their knowledge on their chosen subjects.
 
 ## Functionalities
 
 ### Platform
 
-Within the platform, the Learning Manager has access to a reporting dashboard which offers visual information about the learning system, such as the number of unpublished course content, overdue course instances, the total number of available courses, etc.
+As a key feature, the platform provides a reporting dashboard for the Learning Manager, offering a visual representation of various metrics related to the learning system. This includes information such as the number of unpublished course content, overdue course instances, and the total number of available courses.
 
-Using the Application Navigator, the Learning Manager can access the Application Modules of SkillUp, which allows him to see list views of the tables within the application, such as course registration, the available courses, achievements, etc., and can create, update or delete data from the application.
+Additionally, the Learning Manager has access to the Application Modules of SkillUp through the Application Navigator. This allows them to view list views of the various tables within the application, such as course registration, available courses, and achievements.
+
+Furthermore, the Learning Manager has the ability to create, update, or delete data within the application through this interface.
 
 ### Service Portal
 
-The end-user interacts with the application using the Service Portal, the "Front-End Portal Framework" of ServiceNow.
+The end-users interact with the SkillUp application through the Service Portal, which is the "Front-End Portal" of ServiceNow.
 
-This Portal allows the end-user to browse catalogs of on-demand or instructor-led courses, learning paths, which may contain multiple courses and allows enrolling to multiple courses at once, their available assessments, completed courses and achievements.
+Through this portal, the end-user can easily browse through catalogs of on-demand or instructor-led courses, as well as learning paths, which may contain multiple courses and enables the user to enroll in multiple courses at once.
+
+Furthermore, end-users also have access to their available assessments, completed courses, and achievements.
 
 ### On-demand courses
 
-Each course contains multiple modules, and each module contains multiple articles. All of these can be created by the Learning Manager. Within the database, the articles are related to modules, and the modules are related to the course.
+The courses within the SkillUp application are structured with multiple modules, and each module contains multiple articles.
+
+These course components can be created and managed by the Learning Manager.
+
+In terms of the database, the articles are related to their respective modules, and the modules are related to their respective courses. This creates a clear and organized structure for the course content within the application.
 
 <img src="/img/portfolio-imgs/skillup-course.png" />
 
-Within the course's page, the end-user can see the article and the progress they've made throughout the course, they can see the course content, but access is limited to the next content of the course, unless the user completes the current content.
+When viewing a course's page, the end-user is able to see their progress throughout the course, as well as the course content.
 
-After completing the current content, the user is redirected to the next article, the previous one is marked as complete and the course progress updates.
+However, access to the next content is limited until the user completes the current content. Once the current content is completed, the user is redirected to the next article, and the previous article is marked as complete.
+
+This updates the user's course progress, providing them with a clear understanding of their progress within the course.
 
 <img src="/img/portfolio-imgs/skillup-progress.png" />
 
 ### Instructor-led courses
 
-The user is able to register to ILCs and attend the course within an external application, such as Teams, Zoom, Google Meet, etc.
+End-users have the ability to register for instructor-led courses (ILCs) and attend the course through an external application, such as Teams, Zoom, or Google Meet.
 
-The link can be added by the instructor or by the Learning Manager.
+The link to join the course can be added by the instructor or the Learning Manager, providing a seamless integration between the SkillUp application and external platforms.
 
 ### Achievements & ranks
 
-The Learning Manager can create achievements and associate courses with them. Upon completing a course, the user receives that achievement and it counts towards their new rank.
+The Learning Manager has the capability to create achievements and associate them with specific courses.
 
-There are two types of achievements that can be created:
+Upon completing a course, the end-user will be awarded the associated achievement, which will contribute to their overall rank. There are two types of achievements that can be created:
 
-- Based on course completion, as mentioned above;
-- Based on the number of courses the user completes.
+- Based on the completion of a specific course.
+- Based on the total number of courses completed by the user.
 
-Each rank requires a certain number of achievements to be earned by the user. This number is configurable by an Administrator.
+Each rank within the application requires a configurable number of achievements to be earned by the end-user, which can be set by an Administrator.
+
+This feature allows for a sense of progression and motivation for the end-users to complete more courses and advance their rank.
 
 <img src="/img/portfolio-imgs/skillup-profile.png" />
 
 ## What did I learn
 
-During the training, I learnt more about ServiceNow and Agile Software Development Life Cycle.
+Throughout the training, I gained a deeper understanding of ServiceNow and Agile Software Development Life Cycle.
 
-I learnt how to work with AngularJS and extended my knowledge of Bootstrap. I've used various ServiceNow APIs to fetch and work with data from the database.
+I had the opportunity to work with AngularJS and further expand my knowledge of Bootstrap. Additionally, I utilized various ServiceNow APIs to effectively fetch and work with data from the database.
 
-I learnt how to design a database, use available tools and products within ServiceNow, to stick to the pricing and the subscription models ServiceNow offers to reduce the cost for the client of maintaining the application.
+I also gained valuable experience in database design and utilizing various tools and products within ServiceNow. Furthermore, I learnt how to adhere to the pricing and subscription models offered by ServiceNow to minimize the cost of maintaining the application for the client.
