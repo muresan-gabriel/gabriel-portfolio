@@ -27,9 +27,10 @@ export default function LandingContainer() {
             <br /> and intuitive web apps.
           </h4>
           <p className="text-slate-500 text-sm mt-3 fade-in-4">
-            With experience in both web development and <br />
-            graphic design, I always aim to deliver <br />
-            amazing solutions.
+            As an engineer with experience in both web development
+            <br /> and graphic design, my ultimate goal is to consistently
+            <br />
+            deliver exceptional solutions.
           </p>
           <div className="buttons flex">
             <div

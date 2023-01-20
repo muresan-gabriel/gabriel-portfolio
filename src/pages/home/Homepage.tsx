@@ -37,9 +37,11 @@ export default function Homepage() {
               Why work with me?
             </h4>
             <p className="md:max-w-xl text-slate-400 text-md text-center max-w-xs">
-              I am passionate about the web. I have experience with different
-              frameworks and libraries and I always aim to learn more about
-              various technologies, both on frontend and backend.
+              I am deeply passionate about the web, and have a wealth of
+              experience working with various frameworks and libraries. I am
+              always eager to expand my knowledge and skills, and am dedicated
+              to staying up to date with the latest technologies in both
+              frontend and backend development.
             </p>
           </div>
         </div>
@@ -52,9 +54,9 @@ export default function Homepage() {
               Responsive design & development
             </span>
             <p className="text-slate-400 font-medium max-w-lg">
-              Your products will look fantastic on any screen-size. I always
-              build apps and projects mobile-first to ensure they're just as
-              great on mobile as on higher screen-sizes.
+              In the development of all apps and projects, I prioritize a
+              mobile-first approach to ensure a seamless user experience across
+              all devices, including mobile and higher screen-sizes.
             </p>
             <DemoContainer></DemoContainer>
           </div>
@@ -68,9 +70,10 @@ export default function Homepage() {
               Research, evaluate, implement
             </span>
             <p className="text-slate-400 font-medium max-w-lg">
-              While crafting a solution, my focus is always on the end-user,
-              both in design and development, no matter if I'm building a simple
-              landing or a complex application.
+              When crafting solutions, my primary focus is always on the
+              end-user. I ensure that both design and development align with
+              this focus, whether I am developing a simple landing page or a
+              complex application.
             </p>
           </div>
           <UserResearch></UserResearch>
@@ -84,9 +87,9 @@ export default function Homepage() {
               Respect, communication, reliability
             </span>
             <p className="text-slate-400 font-medium max-w-lg">
-              Ensuring the team's success is and should always be a priority.
-              Without a cooperation and communication, delivering a product will
-              be difficult and rigid.
+              As a priority, I always strive to ensure the success of the team.
+              Without effective cooperation and communication, the delivery of a
+              product can be hindered and inflexible.
             </p>
           </div>
         </div>

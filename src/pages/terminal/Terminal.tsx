@@ -1,11 +1,12 @@
 import "./terminal.css";
 
-import { useState, useEffect, React, useCallback } from "react";
+import { useState, useEffect, React, useCallback, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { commands, executeCommands } from "./terminal.utils.js";
 
 const Terminal = () => {
+  const bottomRef = useRef(null);
   const navigate = useNavigate();
 
   const [input, setInput] = useState("");
@@ -42,6 +43,11 @@ const Terminal = () => {
     setInput(event.target.value);
   };
 
+  useEffect(() => {
+    // 👇️ scroll to bottom every time messages change
+    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [history]);
+
   return (
     <div
       onContextMenu={(e) => e.preventDefault()}
@@ -49,7 +55,11 @@ const Terminal = () => {
     >
       <pre id="messages">
         {history.map((command) => {
-          return <div>{command}</div>;
+          return (
+            <>
+              <div>{command}</div>
+            </>
+          );
         })}
       </pre>
       <span className="text-indigo-300">guest@gabrielmuresan.com</span>:
