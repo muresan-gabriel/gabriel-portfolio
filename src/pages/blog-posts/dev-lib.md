@@ -1,20 +1,16 @@
 ## About the project
 
-Web application built using vanilla `PHP`.
-
-It uses `Bootstrap` for layout and UI, and a pack of free illustrations from SALY, to bring some life in the pages.
-
-The database is built and managed with `MySQL`.
+The web application was developed using vanilla `PHP`. The layout and user interface was designed using `Bootstrap`, and a collection of free illustrations from SALY were incorporated to enhance the visual appeal of the pages. The database was designed and managed using `MySQL`.
 
 ## Functionalities
 
 ### Authentication and registration
 
-The user can register a new account or login into an existing account using their email and password. The credentials are stored in the database.
+The web application features a registration and login system that allows users to create new accounts or log in to existing accounts using their email and password.
 
-The form is validated in real-time and provides feedback to the user if any data of any field is not valid.
+The user credentials are securely stored in the database. The forms feature real-time validation to ensure the data entered by the user is accurate and complete.
 
-Upon correctly completing the registration or authentication forms, the user is allowed to click the login / register buttons and proceed further.
+Upon successful completion of the registration or authentication forms, users are granted access to proceed further in the application.
 
 ### Profile editing
 
