@@ -14,30 +14,34 @@ Upon successful completion of the registration or authentication forms, users ar
 
 ### Profile editing
 
-The user is able to see their profile or profiles of other users.
+Users are able to view their own profile as well as the profiles of other users upon accessing the platform.
 
-Upon visiting their profile, the user can edit their name, username, link to their website, bio, email, and password, and can also add a new profile picture.
+Upon visiting their profile, users have the ability to edit their personal information such as their name, username, website link, bio, email, and password.
 
-All of this information is stored in the database.
+Additionally, users can also upload a new profile picture. All of this information is securely stored in the platform's database.
 
 ### Uploading assets
 
-Once authenticated, the user can click the `Explore Assets` button within the header menu or click their profile tag in the upper-right corner to toggle a dropdown which allows them to see their profile, upload an asset or sign out.
+Once authenticated, the user can access the `Explore Assets` feature by clicking the corresponding button within the header menu or by clicking on their profile tag located in the upper-right corner of the screen.
 
-The asset form requires a name, a description, a thumbnail and the archive file containing all the asset files. Upon publishing, the asset goes into a `Pending` state, awaiting approval. It can be `Approved`, `Declined` or `Deleted` completely by the administrator.
+A dropdown menu will appear, providing the user with the option to access their profile, upload an asset, or sign out.
+
+To upload an asset, the user is prompted to fill out a form which includes fields for the asset's name, description, and thumbnail image. The user is also required to upload the archive file containing all the necessary asset files.
+
+Once the asset is submitted, it is placed in a `Pending` state, awaiting review and approval by an administrator. The administrator has the ability to approve, decline, or delete the asset as needed.
 
 ### Exploring existing assets
 
-Visiting the `Explore Assets` page, the user will be presented with a list of all available, approved assets within the platform. They can click on whichever they'd like to download, and will be presented with the assets page containing it's thumbnail, name, the user who uploaded it, the description and a Download button.
+Upon visiting the `Explore Assets` page, users are presented with a comprehensive list of all available, approved assets within the platform. Users can easily browse through the list and click on any asset that interests them.
 
-Upon clicking the `Download` button, the asset's archive file will be downloaded.
+This will direct them to the asset's page, which displays the asset's thumbnail, name, the user who uploaded it, the description, and a `Download` button.
 
-The user can also check the profile of the user who posted the asset. They can see their name, username, profile picture personal website, bio and their tags. Possible tags are `PRO`, obtained by posting a specific number of assets, or `ADMIN`, provided to user whom are Administrators.
+By clicking the `Download` button, users can easily download the asset's archive file. In addition to this, users also have the option to view the profile of the user who posted the asset.
+
+The profile displays the user's name, username, profile picture, personal website (if provided), bio, and any relevant tags such as `PRO` (awarded for posting a specific number of assets) or `ADMIN` (awarded to users who are Administrators).
 
 ## What did I learn
 
-This project was built to be presented during the Web Development laboratory during the second year of university.
+This project was developed as a part of the Web Development laboratory during the second year of university. Through the course of the project, I gained a deeper understanding of various technologies including `HTML`, `CSS`, `PHP`, `JavaScript`, but also design and layout, user experience, and project planning.
 
-I learnt many things about `HTML` and `CSS`, design and layout, user experience and project planning.
-
-Upon building the database, I learnt more about relationships between tables, managing and optimizing data fetching requests, sanitizing submitted data by the users, and designing a database based on the requirements of the application.
+During the development of the database, I also gained valuable knowledge and experience in working with database relationships, managing and optimizing data fetching requests, implementing data sanitization to ensure the security and integrity of user-submitted information, and designing a database that effectively meets the requirements of the application.
