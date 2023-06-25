@@ -124,6 +124,13 @@ export const projectsList = [
     type: "Internship",
     technologies: ["AngularJS", "Bootstrap", "ServiceNow", "LESS", "GlideAPI"],
   },
+  {
+    id: 2,
+    name: "dante",
+    label: "Dante - Project Management System",
+    type: "Personal",
+    technologies: ["React", "TailwindCSS", "Node.js", "Express.js", "MySQL"],
+  },
 ];
 
 export const blogPosts = [

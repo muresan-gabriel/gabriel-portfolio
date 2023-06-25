@@ -27,7 +27,7 @@ export default function LandingContainer() {
             <br /> and intuitive web apps.
           </h4>
           <p className="text-slate-500 text-sm mt-3 fade-in-4">
-            As an engineer with experience in both web development
+            As a developer with experience in both web development
             <br className="hidden md:inline" /> and graphic design, my ultimate
             goal is to consistently <br className="hidden md:inline" />
             deliver exceptional solutions.

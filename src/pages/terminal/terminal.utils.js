@@ -3,7 +3,7 @@ export const commands = ["help", "about", "projects", "blog"];
 export const executeCommands = function (command) {
   switch (command) {
     case "about":
-      return "\nI am currently working as a Software Engineer @ Computacenter Romania.\n\nI am very familiar with HTML / CSS / JavaScript. I've built various projects in the past and I'm quite experienced with React and AngularJS, CSS frameworks, such as Bootstrap and TailwindCSS.\n\nI've built REST APIs before using Node.js and express.js. As of databases, I'm familiar with MySQL and BaaS platforms, like Firebase. I'm somewhat comfortable with NoSQL databases as well.\n\nI'm currently focusing on design patterns and architectural patterns for systems' architecture.\n\n";
+      return "\nI am currently working as a Software Engineer @ Computacenter Romania.\n\nI am very familiar with HTML / CSS / JavaScript. I've built various projects in the past and I'm quite experienced with React and AngularJS and CSS frameworks, such as Bootstrap and TailwindCSS.\n\nI've built REST APIs before using Node.js and express.js. As of databases, I'm familiar with MySQL and BaaS platforms, like Firebase. I've build applications using NoSQL databases, like MongoDB and ArangoDB.\n\nI'm currently trying to learn more about design patterns, architectural patterns for systems' architecture and focus on learning building applications using C# and .NET.\n\n";
     case "projects":
       return "A complete list of projects will soon be available in the terminal as well. Sorry for the inconvenience.";
     case "social":

@@ -84,12 +84,12 @@ export default function Homepage() {
               Team player
             </h4>
             <span className="text-sm text-amber-500 mb-5">
-              Respect, communication, reliability
+              Communication, reliability
             </span>
             <p className="text-slate-400 font-medium max-w-lg">
-              As a priority, I always strive to ensure the success of the team.
-              Without effective cooperation and communication, the delivery of a
-              product can be hindered and inflexible.
+              As a priority, I always strive to help ensure the success of the
+              team. Without effective cooperation and communication, the
+              delivery of a product can be hindered and inflexible.
             </p>
           </div>
         </div>
