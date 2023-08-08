@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div className="container pt-[10rem] w-100 md:w-[45%] flex flex-col fade-in-1">
       <h3 className="text-3xl md:text-4xl font-black text-slate-900 text-center px-2 md:px-[5rem] mb-12">
-        Hi! I'm a web developer and a computer science student.
+        Hi! I'm a web developer and a software engineering master's student.
       </h3>
       <div className="container work-experience px-2">
         <h3 className="text-3xl mb-5 font-black text-slate-900">

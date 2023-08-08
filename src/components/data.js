@@ -155,7 +155,7 @@ export const workExperience = [
     endDate: getDate("Present"),
     experience: getTimeWorked(new Date("2022-08-01"), new Date()),
     description:
-      "Obtained System Administrator and Application Developer certifications, was assigned to a project where I did debugging and defect remediation on various solution implementations, but mainly focused on Field Service Management.",
+      "• Delivered new functionalities while cooperating with the development team and the client.\n• Debugged processes and business logic and provided solutions to defects.\n• Cooperated with the team and the customer to pinpoint issues and come up with solutions.",
     companyImage: "",
     technologies: [
       "AngularJS",
@@ -173,7 +173,7 @@ export const workExperience = [
     experience: getTimeWorked(new Date("2022-07-01"), new Date("2022-08-01")),
     companyImage: "",
     description:
-      "Learnt more about ServiceNow through training sessions. Started work on a project, a Learning Managemenet System, which allowed me to get some hands-on experience in ServiceNow Application Development.",
+      "• Built project simulating an Agile development workstream.\n• Wrote new stories or updated existing ones which were not following best practices and implemented the functionalities required.\n• Built customer facing Portal using AngularJS and Bootstrap.",
     technologies: ["AngularJS", "Agile Scrum", "ServiceNow", "Git", "GitHub"],
   },
   {
@@ -188,6 +188,12 @@ export const workExperience = [
 ];
 
 export const education = [
+  {
+    specialization: "Software Engineering - M. Sc.",
+    university: "Technical University of Cluj-Napoca",
+    startDate: getDate("2023-10-01"),
+    endDate: getDate("2025-07-01"),
+  },
   {
     specialization: "Computer Science - B. Sc.",
     university: "Technical University of Cluj-Napoca",
