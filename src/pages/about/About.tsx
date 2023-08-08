@@ -30,7 +30,10 @@ export default function About() {
                   {`${experience.startDate} - ${experience.endDate} • ${experience.experience}`}
                 </span>
                 {experience.description ? (
-                  <p className="text-[14px] md:text-[16px] w-[20rem] md:w-[40vw] font-bold mt-3 mb-[-3px] text-slate-800 leading-[20px]">
+                  <p
+                    className="text-[14px] md:text-[16px] w-[20rem] md:w-[40vw] font-bold mt-3 mb-[-3px] text-slate-800 leading-[20px]"
+                    style="white-space: pre;"
+                  >
                     {experience.description}
                   </p>
                 ) : (
