@@ -100,6 +100,8 @@ function getTimeWorked(startDate, endDate) {
       return `${difference / 12} Years, ${difference % 12} Months`;
     case difference === 1:
       return difference + " Month";
+    case difference === 0:
+      return "Less than a month";
     default:
       return difference + " Months";
   }
@@ -112,24 +114,31 @@ function getReadTime(wordCount) {
 export const projectsList = [
   {
     id: 0,
-    name: "dev-lib",
-    label: "dev.lib - Open-Source Assets Platform",
+    name: "dante",
+    label: "Dante - Project Management System",
     type: "Personal",
-    technologies: ["PHP", "MySQL", "Bootstrap"],
+    technologies: ["React", "TailwindCSS", "Node.js", "Express.js", "MySQL"],
   },
   {
     id: 1,
+    name: "vll",
+    label: "Visual Linked Lists",
+    type: "Personal",
+    technologies: ["React", "TailwindCSS"],
+  },
+  {
+    id: 2,
     name: "skillup",
     label: "SkillUp - Learning Management System",
     type: "Internship",
     technologies: ["AngularJS", "Bootstrap", "ServiceNow", "LESS", "GlideAPI"],
   },
   {
-    id: 2,
-    name: "dante",
-    label: "Dante - Project Management System",
+    id: 3,
+    name: "dev-lib",
+    label: "dev.lib - Open-Source Assets Platform",
     type: "Personal",
-    technologies: ["React", "TailwindCSS", "Node.js", "Express.js", "MySQL"],
+    technologies: ["PHP", "MySQL", "Bootstrap"],
   },
 ];
 
@@ -149,13 +158,23 @@ export const blogPosts = [
 export const workExperience = [
   {
     id: 0,
+    company: "Betfair Romania Development",
+    position: "Backend Developer",
+    startDate: getDate("2023-10-04"),
+    endDate: getDate("Present"),
+    experience: getTimeWorked(new Date("2023-10-04"), new Date()),
+    companyImage: "",
+    technologies: ["NodeJS", "NestJS", "TypeScript", "AWS", "Docker", "Git"],
+  },
+  {
+    id: 1,
     company: "Computacenter Romania",
     position: "Software Engineer",
     startDate: getDate("2022-08-01"),
-    endDate: getDate("Present"),
-    experience: getTimeWorked(new Date("2022-08-01"), new Date()),
+    endDate: getDate("2023-10-03"),
+    experience: getTimeWorked(new Date("2022-08-01"), new Date("2023-10-03")),
     description:
-      "• Delivered new functionalities while cooperating with the development team and the client.\n• Debugged processes and business logic and provided solutions to defects.\n• Cooperated with the team and the customer to pinpoint issues and come up with solutions.",
+      "• Delivered new functionalities while cooperating with the development team and the clients.\n• Debugged processes, business logic and provided solutions to defects.\n• Cooperated with the team and the customer to pinpoint issues and come up with solutions.\n• Contributed to the development of the customer facing portal using AngularJS and built-in APIs.\n• Integrated existing workstreams to offer the customer limited, in terms of access,\n   but rich functionalities to work with their company data.\n• Contributed to the delivery phase and the early life support of the project, providing solutions to\n   critical issues and offered oncall time to the project.\n• Developed post-MVP stories to facilitate additional functionalities to the baseline product.\n",
     companyImage: "",
     technologies: [
       "AngularJS",
@@ -165,7 +184,7 @@ export const workExperience = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     company: "Computacenter Romania",
     position: "Software Engineer Intern",
     startDate: getDate("2022-07-01"),
@@ -177,7 +196,7 @@ export const workExperience = [
     technologies: ["AngularJS", "Agile Scrum", "ServiceNow", "Git", "GitHub"],
   },
   {
-    id: 2,
+    id: 3,
     company: "McDonalds Romania",
     position: "Crew Trainer",
     startDate: getDate("2020-10-01"),

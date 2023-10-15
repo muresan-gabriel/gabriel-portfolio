@@ -13,7 +13,7 @@ import Project from "./pages/project/Project.tsx";
 import Blog from "./pages/blog/Blog.tsx";
 import BlogPost from "./pages/blog-post/BlogPost.tsx";
 import NotFound from "./pages/not-found/NotFound.tsx";
-import Terminal from "./pages/terminal/Terminal.tsx";
+import Terminal from "./pages/terminal/Terminal.jsx";
 
 import { db } from "./configs/firebase-config.tsx";
 

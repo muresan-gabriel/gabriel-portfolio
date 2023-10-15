@@ -28,7 +28,7 @@ export default function Blog(props) {
               <Link
                 style={{ display: loaded ? "block" : "none" }}
                 to={`/blog/${blog.name}`}
-                className="project m-5 bg-slate-100 w-100 xl:w-[45%] text-slate-50 duration-300 transition hover:translate-y-[-3px]"
+                className="project m-5 bg-slate-100 w-100 xl:w-[45%] text-slate-50 duration-300 transition hover:scale-[1.01] hover:ring-[5px] hover:ring-offset-[4px] hover:ring-indigo-500 rounded-3xl [&>div]:hover:drop-shadow-[0]"
               >
                 <div className="image-container lg:w-full w-full max-h-[15rem] overflow-hidden">
                   <img
@@ -39,7 +39,7 @@ export default function Blog(props) {
                     // onLoad={setLoading(false)}
                   />
                 </div>
-                <div className="project-information bg-slate-50 p-5 drop-shadow-lg rounded-b-3xl">
+                <div className="project-information bg-slate-50 p-5 rounded-b-3xl">
                   <h3 className="text-slate-900 font-bold">{blog.label}</h3>
                   <div className="tech-container mt-5 mb-[-0.5rem]">
                     {blog.categories.map((tech) => {

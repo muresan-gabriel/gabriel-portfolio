@@ -1,4 +1,5 @@
 import "./about.css";
+import React from "react";
 
 import { workExperience } from "../../components/data.js";
 import { education } from "../../components/data.js";
@@ -32,7 +33,7 @@ export default function About() {
                 {experience.description ? (
                   <p
                     className="text-[14px] md:text-[16px] w-[20rem] md:w-[40vw] font-bold mt-3 mb-[-3px] text-slate-800 leading-[20px]"
-                    style="white-space: pre;"
+                    style={{ whiteSpace: "pre" } as React.CSSProperties}
                   >
                     {experience.description}
                   </p>
